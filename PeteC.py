@@ -1,7 +1,6 @@
 from Player import Player
 
 class PeteC(Player):
-
     def player_1_move(self, card1: float, card2: float) -> float:
         if card1 > 0.5 or card2 > 0.5:
             return 5
@@ -13,4 +12,4 @@ class PeteC(Player):
         return False
 
     def get_name(self) -> str:
-        return "Pete C"
+        return "PeteC"
