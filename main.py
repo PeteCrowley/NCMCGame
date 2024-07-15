@@ -2,6 +2,7 @@ from Player import Player
 from RandomPlayer import RandomPlayer
 import random
 import matplotlib.pyplot as plt
+from PeteC import PeteC
 
 ante = 1
 num_rounds = 500
@@ -29,7 +30,7 @@ def run_game(p1: Player, p2: Player):
         p1_profits, p2_profits = p2_profits, p1_profits
     return p1_profits, p2_profits
 
-all_players = [RandomPlayer() for _ in range(10)]
+all_players = [RandomPlayer() for _ in range(9)] + [PeteC()]
 profits = [0 for _ in range(len(all_players))]
 for i in range(len(all_players)):
     for j in range(i + 1, len(all_players)):
